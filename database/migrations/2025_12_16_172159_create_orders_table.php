@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('api_id')->unique();
+            $table->string('api_id')->unique();
     $table->json('payload');
             $table->timestamps();
         });
